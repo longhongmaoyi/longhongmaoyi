@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>LONGHONGMAOYI – Yiwu Trade Link | China Sourcing Agent & Wholesale Supplier</title>
+<meta name="description" content="Your trusted Yiwu sourcing partner. Connecting global buyers with China's best factories, wholesale suppliers, OEM manufacturers and private label opportunities."/>
+<meta name="keywords" content="Yiwu sourcing agent, China wholesale supplier, import from China, Yiwu market agent, China factory sourcing, global sourcing company, OEM supplier China"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --navy:#0a1628;--navy2:#0f2044;--navy3:#1a3460;
+  --gold:#c9a84c;--gold2:#e8c870;--gold3:#f5e6b8;
+  --white:#ffffff;--off:#f8f9fc;--gray:#e8ecf4;
+  --text:#1a2340;--muted:#6b7a99;
+  --red:#c0111a;
+  font-size:16px;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
+h1,h2,h3{font-family:'Playfair Display',serif;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+
+/* UTILS */
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+.section{padding:90px 0;}
+.section-label{font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.section-title{font-size:clamp(28px,4vw,44px);color:var(--navy);line-height:1.15;margin-bottom:16px;}
+.section-sub{font-size:16px;color:var(--muted);line-height:1.7;max-width:560px;}
+.gold-line{width:50px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;margin:16px 0 24px;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:4px;font-size:14px;font-weight:600;letter-spacing:.5px;cursor:pointer;border:none;transition:all .3s;}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);box-shadow:0 4px 20px rgba(201,168,76,.35);}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,.5);}
+.btn-outline{background:transparent;border:1.5px solid rgba(255,255,255,.5);color:#fff;}
+.btn-outline:hover{background:rgba(255,255,255,.1);border-color:#fff;}
+.btn-navy{background:var(--navy);color:#fff;}
+.btn-navy:hover{background:var(--navy3);transform:translateY(-2px);}
+.tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;}
+.tag-gold{background:var(--gold3);color:#7a5c00;}
+
+/* FADE IN ANIMATION */
+.fade-up{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease;}
+.fade-up.visible{opacity:1;transform:translateY(0);}
+.fade-left{opacity:0;transform:translateX(-30px);transition:opacity .7s ease,transform .7s ease;}
+.fade-left.visible{opacity:1;transform:translateX(0);}
+.fade-right{opacity:0;transform:translateX(30px);transition:opacity .7s ease,transform .7s ease;}
+.fade-right.visible{opacity:1;transform:translateX(0);}
+
+/* ═══ NAVBAR ═══ */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:1000;transition:all .4s;}
+#navbar.scrolled{background:rgba(10,22,40,.97);backdrop-filter:blur(12px);box-shadow:0 2px 20px rgba(0,0,0,.3);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1200px;margin:0 auto;padding:0 24px;}
+.nav-logo{display:flex;align-items:center;gap:12px;}
+.nav-logo svg{width:42px;height:42px;}
+.nav-logo-text .top{font-size:15px;font-weight:800;color:#fff;letter-spacing:1px;}
+.nav-logo-text .bot{font-size:9px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;}
+.nav-links{display:flex;align-items:center;gap:32px;}
+.nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,.8);letter-spacing:.3px;transition:color .2s;position:relative;}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1.5px;background:var(--gold);transition:width .3s;}
+.nav-links a:hover{color:#fff;}
+.nav-links a:hover::after{width:100%;}
+.nav-cta{display:flex;gap:10px;align-items:center;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.hamburger span{display:block;width:24px;height:2px;background:#fff;transition:all .3s;}
+
+/* ═══ HERO ═══ */
+#hero{min-height:100vh;background:linear-gradient(135deg,#070e1d 0%,#0a1628 40%,#0f2044 70%,#1a3460 100%);display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.04) 1px,transparent 1px);background-size:60px 60px;}
+.hero-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(201,168,76,.08) 0%,transparent 70%);top:-100px;right:-100px;pointer-events:none;}
+.hero-glow2{position:absolute;width:400px;height:400px;background:radial-gradient(circle,rgba(26,52,96,.5) 0%,transparent 70%);bottom:-50px;left:-50px;pointer-events:none;}
+.hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:120px 24px 80px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.25);border-radius:30px;padding:8px 16px;font-size:12px;color:var(--gold);font-weight:600;letter-spacing:1px;margin-bottom:24px;}
+.hero-badge span{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite;}
+.hero-title{font-size:clamp(36px,5vw,60px);color:#fff;line-height:1.1;margin-bottom:8px;}
+.hero-title span{color:var(--gold);display:block;}
+.hero-subtitle{font-size:16px;color:rgba(255,255,255,.65);line-height:1.75;margin-bottom:36px;max-width:480px;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:48px;}
+.hero-stats{display:flex;gap:32px;}
+.hero-stat{text-align:left;}
+.hero-stat .num{font-size:28px;font-weight:800;color:#fff;font-family:'Playfair Display',serif;}
+.hero-stat .num span{color:var(--gold);}
+.hero-stat .lbl{font-size:11px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;margin-top:2px;}
+.hero-divider{width:1px;height:40px;background:rgba(255,255,255,.15);align-self:center;}
+.hero-visual{position:relative;}
+.hero-card-main{background:rgba(255,255,255,.05);backdrop-filter:blur(10px);border:1px solid rgba(201,168,76,.2);border-radius:16px;padding:28px;margin-bottom:16px;}
+.hero-card-main .title{font-size:13px;color:var(--gold);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;}
+.cat-pills{display:flex;flex-wrap:wrap;gap:8px;}
+.cat-pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:6px 14px;font-size:12px;color:rgba(255,255,255,.75);transition:all .3s;cursor:pointer;}
+.cat-pill:hover{background:rgba(201,168,76,.2);border-color:var(--gold);color:var(--gold);}
+.hero-cards-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.hero-mini-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:18px;transition:all .3s;}
+.hero-mini-card:hover{border-color:rgba(201,168,76,.4);background:rgba(201,168,76,.05);}
+.hero-mini-card .icon{font-size:22px;margin-bottom:8px;}
+.hero-mini-card p{font-size:12px;color:rgba(255,255,255,.6);line-height:1.5;}
+.hero-mini-card strong{display:block;font-size:13px;color:#fff;margin-bottom:4px;}
+
+/* ═══ TICKER ═══ */
+.ticker{background:var(--gold);padding:12px 0;overflow:hidden;}
+.ticker-inner{display:flex;gap:0;white-space:nowrap;animation:ticker 30s linear infinite;}
+.ticker-item{padding:0 32px;font-size:13px;font-weight:600;color:var(--navy);letter-spacing:.5px;}
+.ticker-item::after{content:'◆';margin-left:32px;opacity:.4;}
+
+/* ═══ ABOUT ═══ */
+#about{background:var(--white);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
+.about-img-wrap{position:relative;}
+.about-img-bg{width:100%;height:480px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy3) 100%);border-radius:16px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;}
+.about-img-bg .big-lh{font-size:200px;font-weight:900;color:rgba(201,168,76,.08);font-family:'Playfair Display',serif;line-height:1;position:absolute;}
+.about-img-overlay{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;gap:0;}
+.about-stat-box{display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.06);padding:20px;}
+.about-stat-box .n{font-size:36px;font-weight:800;color:#fff;font-family:'Playfair Display',serif;}
+.about-stat-box .n span{color:var(--gold);}
+.about-stat-box .l{font-size:11px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;text-align:center;margin-top:4px;}
+.about-badge{position:absolute;bottom:-20px;right:-20px;background:var(--gold);border-radius:12px;padding:16px 20px;box-shadow:0 8px 30px rgba(201,168,76,.3);}
+.about-badge p{font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:1px;}
+.about-badge .big{font-size:28px;font-weight:800;color:var(--navy);font-family:'Playfair Display',serif;}
+.about-points{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px;}
+.about-point{display:flex;align-items:flex-start;gap:12px;padding:14px;border-radius:8px;background:var(--off);border:1px solid var(--gray);transition:all .3s;}
+.about-point:hover{border-color:var(--gold);background:#fffdf5;}
+.about-point .icon{width:36px;height:36px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+.about-point h4{font-size:13px;font-weight:600;color:var(--navy);font-family:'Inter',sans-serif;margin-bottom:2px;}
+.about-point p{font-size:11px;color:var(--muted);line-height:1.5;}
+
+/* ═══ SERVICES ═══ */
+#services{background:var(--off);}
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px;}
+.service-card{background:var(--white);border:1px solid var(--gray);border-radius:12px;padding:28px 22px;transition:all .35s;cursor:pointer;position:relative;overflow:hidden;}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transform-origin:left;transition:transform .35s;}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(10,22,40,.1);border-color:transparent;}
+.service-card:hover::before{transform:scaleX(1);}
+.service-icon{width:52px;height:52px;background:linear-gradient(135deg,var(--navy),var(--navy3));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:18px;transition:all .35s;}
+.service-card:hover .service-icon{background:linear-gradient(135deg,var(--gold),var(--gold2));}
+.service-card h3{font-size:15px;font-weight:700;color:var(--navy);font-family:'Inter',sans-serif;margin-bottom:10px;}
+.service-card p{font-size:13px;color:var(--muted);line-height:1.65;}
+
+/* ═══ CATEGORIES ═══ */
+#categories{background:var(--white);}
+.cat-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.cat-card{border-radius:12px;overflow:hidden;position:relative;cursor:pointer;height:180px;transition:all .35s;}
+.cat-card:first-child,.cat-card:nth-child(5){grid-column:span 1;}
+.cat-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:70px;transition:transform .5s;}
+.cat-card:hover .cat-bg{transform:scale(1.1);}
+.cat-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,22,40,.85) 0%,rgba(10,22,40,.2) 100%);transition:all .35s;}
+.cat-card:hover .cat-overlay{background:linear-gradient(to top,rgba(10,22,40,.92) 0%,rgba(10,22,40,.4) 100%);}
+.cat-content{position:absolute;bottom:0;left:0;right:0;padding:20px;}
+.cat-content h3{font-size:16px;font-weight:700;color:#fff;font-family:'Inter',sans-serif;margin-bottom:4px;}
+.cat-content p{font-size:12px;color:rgba(255,255,255,.6);}
+.cat-arrow{position:absolute;top:16px;right:16px;width:32px;height:32px;background:rgba(255,255,255,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;opacity:0;transition:all .35s;}
+.cat-card:hover .cat-arrow{opacity:1;background:var(--gold);color:var(--navy);}
+.cat-colors{background:linear-gradient(135deg,#1a3460,#0f2044);}
+.cat-colors2{background:linear-gradient(135deg,#2d1b4e,#4a2070);}
+.cat-colors3{background:linear-gradient(135deg,#0f3460,#16213e);}
+.cat-colors4{background:linear-gradient(135deg,#1a4a2e,#2d6b45);}
+.cat-colors5{background:linear-gradient(135deg,#4a1a1a,#7a2d2d);}
+.cat-colors6{background:linear-gradient(135deg,#2d3a1a,#4a5c2d);}
+.cat-colors7{background:linear-gradient(135deg,#1a2d4a,#2d4a6b);}
+.cat-colors8{background:linear-gradient(135deg,#3a1a2d,#5c2d4a);}
+.cat-colors9{background:linear-gradient(135deg,#1a3a3a,#2d5c5c);}
+
+/* ═══ WHY US ═══ */
+#why{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 50%,var(--navy3) 100%);position:relative;overflow:hidden;}
+#why::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.03) 1px,transparent 1px);background-size:50px 50px;}
+#why .section-title{color:#fff;}
+#why .section-sub{color:rgba(255,255,255,.6);}
+#why .gold-line{background:linear-gradient(90deg,var(--gold),var(--gold2));}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+.why-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:30px 24px;transition:all .35s;position:relative;overflow:hidden;}
+.why-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transform-origin:left;transition:transform .4s;}
+.why-card:hover{background:rgba(255,255,255,.07);border-color:rgba(201,168,76,.2);transform:translateY(-4px);}
+.why-card:hover::after{transform:scaleX(1);}
+.why-num{font-size:48px;font-weight:800;color:rgba(201,168,76,.12);font-family:'Playfair Display',serif;line-height:1;margin-bottom:12px;}
+.why-card h3{font-size:16px;font-weight:700;color:#fff;font-family:'Inter',sans-serif;margin-bottom:10px;}
+.why-card p{font-size:13px;color:rgba(255,255,255,.55);line-height:1.7;}
+.why-icon{font-size:28px;margin-bottom:12px;}
+
+/* ═══ STATS ═══ */
+#stats{background:var(--gold);padding:60px 0;}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.stat-item{text-align:center;padding:20px;position:relative;}
+.stat-item+.stat-item::before{content:'';position:absolute;left:0;top:20%;height:60%;width:1px;background:rgba(10,22,40,.2);}
+.stat-num{font-size:48px;font-weight:800;color:var(--navy);font-family:'Playfair Display',serif;line-height:1;}
+.stat-lbl{font-size:12px;font-weight:600;color:rgba(10,22,40,.65);letter-spacing:1.5px;text-transform:uppercase;margin-top:6px;}
+
+/* ═══ GALLERY ═══ */
+#gallery{background:var(--off);}
+.gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:16px;margin-top:40px;}
+.gallery-item{border-radius:12px;overflow:hidden;position:relative;cursor:pointer;}
+.gallery-item:first-child{grid-row:span 2;}
+.gallery-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:80px;transition:transform .5s;}
+.gallery-item:hover .gallery-bg{transform:scale(1.08);}
+.gallery-label{position:absolute;bottom:0;left:0;right:0;padding:16px;background:linear-gradient(to top,rgba(10,22,40,.8),transparent);color:#fff;font-size:13px;font-weight:600;transform:translateY(100%);transition:transform .35s;}
+.gallery-item:hover .gallery-label{transform:translateY(0);}
+.g1{background:linear-gradient(135deg,#0a1628,#1a3460);}
+.g2{background:linear-gradient(135deg,#1a2d4a,#0f2044);}
+.g3{background:linear-gradient(135deg,#2d1b4e,#1a0f2e);}
+.g4{background:linear-gradient(135deg,#1a4a2e,#0f2d1a);}
+.g5{background:linear-gradient(135deg,#4a2010,#2d100a);}
+
+/* ═══ TESTIMONIALS ═══ */
+#testimonials{background:var(--white);}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+.testi-card{background:var(--off);border:1px solid var(--gray);border-radius:12px;padding:28px;transition:all .35s;position:relative;}
+.testi-card:hover{border-color:var(--gold);box-shadow:0 8px 30px rgba(201,168,76,.12);}
+.testi-card::before{content:'"';font-size:80px;color:var(--gold3);font-family:'Playfair Display',serif;line-height:.7;position:absolute;top:20px;left:24px;opacity:.6;}
+.testi-stars{color:var(--gold);font-size:13px;margin-bottom:16px;letter-spacing:2px;}
+.testi-text{font-size:14px;color:var(--muted);line-height:1.75;margin-bottom:20px;padding-top:20px;}
+.testi-author{display:flex;align-items:center;gap:12px;border-top:1px solid var(--gray);padding-top:16px;}
+.testi-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy3));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:16px;flex-shrink:0;}
+.testi-name{font-size:14px;font-weight:600;color:var(--navy);}
+.testi-loc{font-size:12px;color:var(--muted);}
+
+/* ═══ FAQ ═══ */
+#faq{background:var(--off);}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px;}
+.faq-item{background:var(--white);border:1px solid var(--gray);border-radius:10px;overflow:hidden;transition:all .3s;}
+.faq-item.open{border-color:var(--gold);}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;cursor:pointer;font-size:14px;font-weight:600;color:var(--navy);gap:12px;}
+.faq-arrow{width:28px;height:28px;border-radius:50%;background:var(--off);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;transition:all .3s;color:var(--muted);}
+.faq-item.open .faq-arrow{background:var(--gold);color:var(--navy);transform:rotate(180deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s;}
+.faq-item.open .faq-a{max-height:200px;padding:0 24px 20px;}
+.faq-a p{font-size:13px;color:var(--muted);line-height:1.75;}
+
+/* ═══ CONTACT ═══ */
+#contact{background:var(--white);}
+.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:start;margin-top:48px;}
+.contact-info{display:flex;flex-direction:column;gap:20px;}
+.contact-box{background:var(--off);border:1px solid var(--gray);border-radius:12px;padding:22px;display:flex;align-items:flex-start;gap:16px;transition:all .3s;cursor:pointer;}
+.contact-box:hover{border-color:var(--gold);background:#fffdf5;}
+.contact-box-icon{width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.cb-green{background:#e8f8e8;}
+.cb-blue{background:#e8f0f8;}
+.cb-gold{background:var(--gold3);}
+.cb-navy{background:#e8edf5;}
+.contact-box h4{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.contact-box p{font-size:13px;color:var(--muted);}
+.contact-form{background:var(--off);border:1px solid var(--gray);border-radius:16px;padding:36px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-group{margin-bottom:16px;}
+.form-group label{display:block;font-size:12px;font-weight:600;color:var(--navy);letter-spacing:.5px;margin-bottom:6px;text-transform:uppercase;}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:1.5px solid var(--gray);border-radius:8px;font-size:14px;font-family:'Inter',sans-serif;color:var(--text);background:var(--white);transition:border-color .2s;outline:none;}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold);}
+.form-group textarea{resize:vertical;min-height:100px;}
+.map-placeholder{background:linear-gradient(135deg,var(--navy),var(--navy3));border-radius:12px;height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-top:20px;gap:8px;}
+.map-placeholder span{font-size:36px;}
+.map-placeholder p{font-size:13px;color:rgba(255,255,255,.6);}
+.map-placeholder strong{font-size:14px;color:#fff;}
+
+/* ═══ CTA BANNER ═══ */
+#cta-banner{background:linear-gradient(135deg,var(--navy) 0%,var(--navy3) 100%);padding:80px 0;text-align:center;position:relative;overflow:hidden;}
+#cta-banner::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.04) 1px,transparent 1px);background-size:50px 50px;}
+#cta-banner h2{font-size:clamp(28px,4vw,44px);color:#fff;margin-bottom:16px;position:relative;}
+#cta-banner p{font-size:16px;color:rgba(255,255,255,.65);margin-bottom:36px;position:relative;}
+#cta-banner .btns{display:flex;justify-content:center;gap:14px;position:relative;}
+
+/* ═══ FOOTER ═══ */
+footer{background:#060d1a;color:rgba(255,255,255,.6);padding:60px 0 0;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;margin-bottom:40px;}
+.footer-brand .logo-area{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.footer-brand p{font-size:13px;line-height:1.75;margin-bottom:20px;max-width:280px;}
+.social-links{display:flex;gap:10px;}
+.social-btn{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer;transition:all .3s;color:rgba(255,255,255,.6);}
+.social-btn:hover{background:var(--gold);color:var(--navy);}
+.footer-col h4{font-size:13px;font-weight:700;color:#fff;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col ul li{font-size:13px;cursor:pointer;transition:color .2s;display:flex;align-items:center;gap:6px;}
+.footer-col ul li::before{content:'›';color:var(--gold);}
+.footer-col ul li:hover{color:#fff;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding:20px 0;display:flex;justify-content:space-between;align-items:center;font-size:12px;}
+.footer-bottom a{color:var(--gold);}
+
+/* ═══ FLOATING ═══ */
+.float-wa{position:fixed;bottom:30px;right:30px;z-index:999;display:flex;flex-direction:column;gap:10px;align-items:flex-end;}
+.wa-btn{width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 20px rgba(37,211,102,.4);cursor:pointer;animation:bounce 2s infinite;transition:transform .2s;}
+.wa-btn:hover{transform:scale(1.1);}
+.wa-tooltip{background:var(--navy);color:#fff;padding:8px 16px;border-radius:20px;font-size:12px;font-weight:600;white-space:nowrap;display:none;}
+.float-wa:hover .wa-tooltip{display:block;}
+
+/* ═══ POPUP ═══ */
+.popup-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;align-items:center;justify-content:center;}
+.popup-overlay.open{display:flex;}
+.popup-box{background:#fff;border-radius:16px;padding:40px;max-width:500px;width:90%;position:relative;animation:popIn .4s ease;}
+.popup-close{position:absolute;top:16px;right:16px;background:var(--gray);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;}
+.popup-box h3{font-size:22px;color:var(--navy);margin-bottom:8px;}
+.popup-box p{font-size:14px;color:var(--muted);margin-bottom:24px;}
+
+/* ═══ KEYFRAMES ═══ */
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes popIn{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:1024px){
+  .services-grid{grid-template-columns:repeat(2,1fr);}
+  .cat-grid{grid-template-columns:repeat(2,1fr);}
+  .why-grid{grid-template-columns:repeat(2,1fr);}
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+  .testi-grid{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  .section{padding:60px 0;}
+  .hero-content{grid-template-columns:1fr;padding:100px 20px 60px;}
+  .hero-visual{display:none;}
+  .hero-stats{gap:16px;}
+  .about-grid{grid-template-columns:1fr;}
+  .about-img-wrap{display:none;}
+  .contact-grid{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .faq-grid{grid-template-columns:1fr;}
+  .testi-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
+  .gallery-item:first-child{grid-row:auto;}
+  .nav-links,.nav-cta{display:none;}
+  .hamburger{display:flex;}
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr;}
+  #cta-banner .btns{flex-direction:column;align-items:center;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="42" fill="none" stroke="#c9a84c" stroke-width="4.5"/>
+        <ellipse cx="50" cy="50" rx="65" ry="17" fill="none" stroke="#c9a84c" stroke-width="3.5" transform="rotate(-20 50 50)"/>
+        <text x="50" y="63" text-anchor="middle" font-family="Arial Black" font-size="33" font-weight="900" fill="#c9a84c">LH</text>
+      </svg>
+      <div class="nav-logo-text">
+        <div class="top">LONGHONGMAOYI</div>
+        <div class="bot">Yiwu Trade Link</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#categories">Products</a>
+      <a href="#why">Why Us</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <button class="btn btn-outline" style="padding:10px 22px;font-size:13px;" onclick="openPopup()">Get a Quote</button>
+      <button class="btn btn-gold" style="padding:10px 22px;font-size:13px;" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start Sourcing</button>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-content">
+    <div class="hero-left fade-left">
+      <div class="hero-badge"><span></span>🌏 Based in Yiwu, China — Serving 50+ Countries</div>
+      <h1 class="hero-title">Your Trusted<span>Yiwu Sourcing</span>Partner</h1>
+      <p class="hero-subtitle">Connecting global buyers with China's best factories & wholesale suppliers. From product sourcing to doorstep delivery — we handle it all.</p>
+      <div class="hero-btns">
+        <button class="btn btn-gold" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">🚀 Start Sourcing Now</button>
+        <button class="btn btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Our Services →</button>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">10<span>K+</span></div><div class="lbl">Products</div></div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat"><div class="num">50<span>+</span></div><div class="lbl">Countries</div></div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat"><div class="num">8<span>+</span></div><div class="lbl">Years Exp.</div></div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat"><div class="num">98<span>%</span></div><div class="lbl">Satisfaction</div></div>
+      </div>
+    </div>
+    <div class="hero-visual fade-right">
+      <div class="hero-card-main">
+        <div class="title">🏭 Product Categories We Source</div>
+        <div class="cat-pills">
+          <span class="cat-pill">🏠 Home & Kitchen</span><span class="cat-pill">💄 Beauty</span>
+          <span class="cat-pill">⚡ Electronics</span><span class="cat-pill">🧸 Toys</span>
+          <span class="cat-pill">👜 Fashion</span><span class="cat-pill">✏️ Stationery</span>
+          <span class="cat-pill">🐾 Pet Products</span><span class="cat-pill">📦 Packaging</span>
+          <span class="cat-pill">🌸 Seasonal</span><span class="cat-pill">⚽ Sports</span>
+        </div>
+      </div>
+      <div class="hero-cards-row">
+        <div class="hero-mini-card"><div class="icon">🏭</div><strong>OEM & Private Label</strong><p>Custom branding & manufacturing from verified factories</p></div>
+        <div class="hero-mini-card"><div class="icon">🔍</div><strong>Quality Inspection</strong><p>Pre-shipment QC checks on every order</p></div>
+        <div class="hero-mini-card"><div class="icon">🚢</div><strong>Global Shipping</strong><p>Door-to-door logistics worldwide</p></div>
+        <div class="hero-mini-card"><div class="icon">💬</div><strong>24/7 Support</strong><p>Dedicated agent. Fast response. Always available</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner" id="ticker">
+    <span class="ticker-item">🌏 Yiwu Sourcing Agent</span>
+    <span class="ticker-item">🏭 China Factory Direct</span>
+    <span class="ticker-item">📦 OEM & Private Label</span>
+    <span class="ticker-item">🚢 Global Shipping</span>
+    <span class="ticker-item">🔍 Quality Inspection</span>
+    <span class="ticker-item">💼 B2B Wholesale</span>
+    <span class="ticker-item">⭐ 8+ Years Experience</span>
+    <span class="ticker-item">🌍 50+ Countries Served</span>
+    <span class="ticker-item">🌏 Yiwu Sourcing Agent</span>
+    <span class="ticker-item">🏭 China Factory Direct</span>
+    <span class="ticker-item">📦 OEM & Private Label</span>
+    <span class="ticker-item">🚢 Global Shipping</span>
+    <span class="ticker-item">🔍 Quality Inspection</span>
+    <span class="ticker-item">💼 B2B Wholesale</span>
+    <span class="ticker-item">⭐ 8+ Years Experience</span>
+    <span class="ticker-item">🌍 50+ Countries Served</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap fade-left">
+        <div class="about-img-bg">
+          <div class="big-lh">LH</div>
+          <div class="about-img-overlay">
+            <div class="about-stat-box"><div class="n">10<span>K</span></div><div class="l">Products Sourced</div></div>
+            <div class="about-stat-box"><div class="n">500<span>+</span></div><div class="l">Verified Suppliers</div></div>
+            <div class="about-stat-box"><div class="n">50<span>+</span></div><div class="l">Countries Served</div></div>
+            <div class="about-stat-box"><div class="n">98<span>%</span></div><div class="l">Client Retention</div></div>
+          </div>
+        </div>
+        <div class="about-badge"><p>Est.</p><div class="big">2016</div><p>Yiwu, China</p></div>
+      </div>
+      <div class="fade-right">
+        <div class="section-label">About Us</div>
+        <h2 class="section-title">The Yiwu Experts Behind Your Success</h2>
+        <div class="gold-line"></div>
+        <p class="section-sub" style="max-width:100%">LONGHONGMAOYI – Yiwu Trade Link is a professional global sourcing company based in Yiwu, China — home to the world's largest wholesale market. We help international importers, Amazon & Shopify sellers, distributors, and retailers find the right products at the right price, sourced directly from verified factories.</p>
+        <div class="about-points">
+          <div class="about-point"><div class="icon">🏭</div><div><h4>Factory Network</h4><p>500+ pre-vetted factories across China</p></div></div>
+          <div class="about-point"><div class="icon">🌍</div><div><h4>Export Experience</h4><p>8+ years serving global buyers</p></div></div>
+          <div class="about-point"><div class="icon">🔍</div><div><h4>Quality Inspection</h4><p>Pre-shipment QC on every order</p></div></div>
+          <div class="about-point"><div class="icon">🚢</div><div><h4>Logistics Support</h4><p>Sea, air & express worldwide shipping</p></div></div>
+          <div class="about-point"><div class="icon">💰</div><div><h4>Factory Prices</h4><p>No middlemen — direct supplier pricing</p></div></div>
+          <div class="about-point"><div class="icon">📦</div><div><h4>Private Label</h4><p>Custom branding & OEM manufacturing</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <div class="section-label" style="text-align:center">What We Do</div>
+      <h2 class="section-title" style="text-align:center">End-to-End Sourcing Services</h2>
+      <div class="gold-line" style="margin:16px auto 0;"></div>
+      <p class="section-sub" style="margin:16px auto 0;text-align:center">From finding the right supplier to delivering goods to your door — we provide a complete sourcing solution.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up"><div class="service-icon">🔎</div><h3>Product Sourcing</h3><p>Tell us what you need — we find the best suppliers, compare prices, and present you with options ready to order.</p></div>
+      <div class="service-card fade-up"><div class="service-icon">✅</div><h3>Factory Verification</h3><p>We visit and vet factories on your behalf, verifying licenses, capacity, quality standards and ethical practices.</p></div>
+      <div class="service-card fade-up"><div class="service-icon">🏷️</div><h3>OEM & Private Label</h3><p>Custom logo, packaging and branding. Build your own brand with minimum order quantities from trusted OEM factories.</p></div>
+      <div class="service-card fade-up"><div class="service-icon">🔬</div><h3>Quality Inspection</h3><p>Professional pre-shipment QC inspections. We check samples and production batches before goods leave China.</p></div>
+      <div class="service-card fade-up"><div class="service-icon">🚢</div><h3>Shipping & Logistics</h3><p>Sea freight, air freight, express courier. We arrange door-to-door delivery with customs clearance support.</p></div>
+      <div class="service-card fade-up"><div class="service-icon">🗺️</div><h3>Market Guide</h3><p>Personal guided tours of Yiwu International Trade Market — the world's largest wholesale market.</p></div>
+      <div class="service-card fade-up"><div class="service-icon">🤝</div><h3>Supplier Negotiation</h3><p>We negotiate prices, payment terms and delivery schedules directly with suppliers in Mandarin on your behalf.</p></div>
+      <div class="service-card fade-up"><div class="service-icon">📸</div><h3>Product Photography</h3><p>Professional product photos for Amazon, Shopify, and e-commerce listings. Shot in our Yiwu studio.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" class="section">
+  <div class="container">
+    <div class="cat-header fade-up">
+      <div>
+        <div class="section-label">Product Range</div>
+        <h2 class="section-title">Categories We Source</h2>
+        <div class="gold-line"></div>
+      </div>
+      <button class="btn btn-navy" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Request Any Category →</button>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card cat-colors fade-up"><div class="cat-bg">🏠</div><div class="cat-overlay"></div><div class="cat-content"><h3>Home & Kitchen</h3><p>Cookware, storage, home décor & more</p></div><div class="cat-arrow">→</div></div>
+      <div class="cat-card cat-colors2 fade-up"><div class="cat-bg">💄</div><div class="cat-overlay"></div><div class="cat-content"><h3>Beauty Products</h3><p>Cosmetics, skincare, makeup tools</p></div><div class="cat-arrow">→</div></div>
+      <div class="cat-card cat-colors3 fade-up"><div class="cat-bg">⚡</div><div class="cat-overlay"></div><div class="cat-content"><h3>Electronics</h3><p>Gadgets, accessories, smart devices</p></div><div class="cat-arrow">→</div></div>
+      <div class="cat-card cat-colors4 fade-up"><div class="cat-bg">🧸</div><div class="cat-overlay"></div><div class="cat-content"><h3>Toys & Games</h3><p>Children's toys, educational, plush</p></div><div class="cat-arrow">→</div></div>
+      <div class="cat-card cat-colors5 fade-up"><div class="cat-bg">👜</div><div class="cat-overlay"></div><div class="cat-content"><h3>Fashion Accessories</h3><p>Bags, jewellery, hair accessories</p></div><div class="cat-arrow">→</div></div>
+      <div class="cat-card cat-colors6 fade-up"><div class="cat-bg">✏️</div><div class="cat-overlay"></div><div class="cat-content"><h3>Stationery & Gifts</h3><p>Office supplies, novelty gifts, packaging</p></div><div class="cat-arrow">→</div></div>
+      <div class="cat-card cat-colors7 fade-up"><div class="cat-bg">🐾</div><div class="cat-overlay"></div><div class="cat-content"><h3>Pet Products</h3><p>Toys, accessories, grooming tools</p></div><div class="cat-arrow">→</div></div>
+      <div class="cat-card cat-colors8 fade-up"><div class="cat-bg">🌸</div><div class="cat-overlay"></div><div class="cat-content"><h3>Seasonal Products</h3><p>Holiday, festive, outdoor & sports</p></div><div class="cat-arrow">→</div></div>
+      <div class="cat-card cat-colors9 fade-up"><div class="cat-bg">📦</div><div class="cat-overlay"></div><div class="cat-content"><h3>Packaging</h3><p>Custom boxes, bags, labels & branding</p></div><div class="cat-arrow">→</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" class="section">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <div class="section-label" style="text-align:center">Why Choose Us</div>
+      <h2 class="section-title" style="text-align:center;color:#fff">The Longhong Advantage</h2>
+      <div class="gold-line" style="margin:16px auto 0;"></div>
+      <p class="section-sub" style="margin:16px auto 0;text-align:center;color:rgba(255,255,255,.6)">We are more than a sourcing agent — we are your strategic partner in China, protecting your interests at every step.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-up"><div class="why-num">01</div><div class="why-icon">💰</div><h3>Direct Factory Prices</h3><p>We work directly with manufacturers — no middlemen, no inflated margins. You get the real factory price every time.</p></div>
+      <div class="why-card fade-up"><div class="why-icon">✅</div><div class="why-num">02</div><h3>Reliable Verified Suppliers</h3><p>Every supplier in our network is personally vetted. We visit factories, check licenses, and assess quality before any introduction.</p></div>
+      <div class="why-card fade-up"><div class="why-num">03</div><div class="why-icon">⚡</div><h3>Fast Communication</h3><p>Dedicated English-speaking sourcing manager. WhatsApp & WeChat available. Most queries answered within 2 hours.</p></div>
+      <div class="why-card fade-up"><div class="why-num">04</div><div class="why-icon">🌍</div><h3>Global Shipping Expertise</h3><p>We have established relationships with freight forwarders for sea, air and express delivery to 50+ countries worldwide.</p></div>
+      <div class="why-card fade-up"><div class="why-num">05</div><div class="why-icon">🏙️</div><h3>Yiwu Local Presence</h3><p>Our team is physically based in Yiwu — the world's largest small commodity market. We know every corner of it.</p></div>
+      <div class="why-card fade-up"><div class="why-num">06</div><div class="why-icon">🔬</div><h3>Quality Control First</h3><p>We conduct pre-production samples, in-production checks, and final QC inspections before goods leave the factory.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item fade-up"><div class="stat-num" data-target="10000">0</div><div class="stat-lbl">Products Sourced</div></div>
+      <div class="stat-item fade-up"><div class="stat-num" data-target="500">0</div><div class="stat-lbl">Verified Suppliers</div></div>
+      <div class="stat-item fade-up"><div class="stat-num" data-target="50">0</div><div class="stat-lbl">Countries Served</div></div>
+      <div class="stat-item fade-up"><div class="stat-num" data-target="98">0</div><div class="stat-lbl">% Client Satisfaction</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <div class="section-label" style="text-align:center">Our Work</div>
+      <h2 class="section-title" style="text-align:center">Factory & Showroom Gallery</h2>
+      <div class="gold-line" style="margin:16px auto 0;"></div>
+      <p class="section-sub" style="margin:16px auto 0;text-align:center">Real factory visits, market tours, showroom meetings and product inspections — all in Yiwu, China.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item g1 fade-up"><div class="gallery-bg">🏭</div><div class="gallery-label">Yiwu International Trade Market</div></div>
+      <div class="gallery-item g2 fade-up"><div class="gallery-bg">🔬</div><div class="gallery-label">Product QC Inspection</div></div>
+      <div class="gallery-item g3 fade-up"><div class="gallery-bg">🤝</div><div class="gallery-label">Supplier Meetings</div></div>
+      <div class="gallery-item g4 fade-up"><div class="gallery-bg">📸</div><div class="gallery-label">Product Photography Studio</div></div>
+      <div class="gallery-item g5 fade-up"><div class="gallery-bg">🚢</div><div class="gallery-label">Warehouse & Shipping</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section" style="background:var(--off)">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <div class="section-label" style="text-align:center">Client Reviews</div>
+      <h2 class="section-title" style="text-align:center">What Our Global Buyers Say</h2>
+      <div class="gold-line" style="margin:16px auto 0;"></div>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-up">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Longhong has been our sourcing partner for 3 years. They saved us 35% on product costs and the quality control is exceptional. I trust them completely with my Amazon FBA business.</p>
+        <div class="testi-author"><div class="testi-avatar">JM</div><div><div class="testi-name">James Mitchell</div><div class="testi-loc">🇺🇸 Amazon Seller, United States</div></div></div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">As a Shopify store owner, finding reliable suppliers was my biggest challenge. Longhong connected me with a factory that does private label and ships DDP to my 3PL. Game changer!</p>
+        <div class="testi-author"><div class="testi-avatar">SL</div><div><div class="testi-name">Sophie Laurent</div><div class="testi-loc">🇫🇷 Shopify Seller, France</div></div></div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">We import containers from Yiwu every quarter. Longhong handles everything — market visits, factory negotiations, QC, and booking the freight. Incredibly professional team.</p>
+        <div class="testi-author"><div class="testi-avatar">KA</div><div><div class="testi-name">Khalid Al-Rashid</div><div class="testi-loc">🇦🇪 Wholesale Distributor, UAE</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <div class="section-label" style="text-align:center">Got Questions?</div>
+      <h2 class="section-title" style="text-align:center">Frequently Asked Questions</h2>
+      <div class="gold-line" style="margin:16px auto 0;"></div>
+    </div>
+    <div class="faq-grid" id="faqGrid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Start Your Sourcing Journey</h2>
+      <div class="gold-line"></div>
+      <p class="section-sub">Fill in the form and our sourcing team will get back to you within 2 business hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info fade-left">
+        <div class="contact-box" onclick="window.open('https://wa.me/86XXXXXXXXXX')"><div class="contact-box-icon cb-green">💬</div><div><h4>WhatsApp</h4><p>+86 XXX XXXX XXXX — Fast replies, 24/7</p></div></div>
+        <div class="contact-box"><div class="contact-box-icon cb-blue">📘</div><div><h4>WeChat</h4><p>ID: LonghongMaoyi — Scan QR to add</p></div></div>
+        <div class="contact-box"><div class="contact-box-icon cb-gold">📧</div><div><h4>Email</h4><p>sourcing@longhongmaoyi.com</p></div></div>
+        <div class="contact-box"><div class="contact-box-icon cb-navy">📍</div><div><h4>Address</h4><p>Yiwu International Trade City, Yiwu, Zhejiang Province, China 322000</p></div></div>
+        <div class="map-placeholder"><span>🗺️</span><strong>Yiwu, Zhejiang, China</strong><p>International Trade Market District</p></div>
+      </div>
+      <div class="contact-form fade-right">
+        <div class="tag tag-gold" style="margin-bottom:20px">✉️ Send an Inquiry</div>
+        <h3 style="font-size:22px;color:var(--navy);margin-bottom:20px;font-family:'Playfair Display',serif;">Tell Us What You Need</h3>
+        <div class="form-row">
+          <div class="form-group"><label>First Name</label><input type="text" placeholder="John"/></div>
+          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Smith"/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Email</label><input type="email" placeholder="john@company.com"/></div>
+          <div class="form-group"><label>WhatsApp / Phone</label><input type="tel" placeholder="+1 234 567 890"/></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Country</label><input type="text" placeholder="United States"/></div>
+          <div class="form-group"><label>Buyer Type</label>
+            <select><option>Amazon Seller</option><option>Shopify Seller</option><option>Wholesale Buyer</option><option>Distributor</option><option>Supermarket</option><option>Retailer</option><option>Other</option></select>
+          </div>
+        </div>
+        <div class="form-group"><label>Product Category</label>
+          <select><option>Home & Kitchen</option><option>Beauty Products</option><option>Electronics</option><option>Toys</option><option>Fashion Accessories</option><option>Stationery & Gifts</option><option>Pet Products</option><option>Packaging</option><option>Other</option></select>
+        </div>
+        <div class="form-group"><label>Describe Your Sourcing Needs</label><textarea placeholder="Tell us about the products you're looking for, quantity, budget, any specific requirements..."></textarea></div>
+        <button class="btn btn-gold" style="width:100%;justify-content:center;font-size:15px;padding:16px;" onclick="submitForm()">🚀 Send Inquiry Now</button>
+        <p style="font-size:11px;color:var(--muted);text-align:center;margin-top:12px;">🔒 Your information is 100% confidential. We respond within 2 hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section id="cta-banner">
+  <div class="container fade-up">
+    <h2>Ready to Source from China's Best Factories?</h2>
+    <p>Join 1,000+ global buyers who trust Longhong for their sourcing needs. Free consultation, no obligation.</p>
+    <div class="btns">
+      <button class="btn btn-gold" onclick="openPopup()">🎯 Get a Free Quote</button>
+      <button class="btn btn-outline" onclick="window.open('https://wa.me/86XXXXXXXXXX')">💬 WhatsApp Us Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-area">
+          <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="#c9a84c" stroke-width="4.5"/>
+            <ellipse cx="50" cy="50" rx="65" ry="17" fill="none" stroke="#c9a84c" stroke-width="3.5" transform="rotate(-20 50 50)"/>
+            <text x="50" y="63" text-anchor="middle" font-family="Arial Black" font-size="33" font-weight="900" fill="#c9a84c">LH</text>
+          </svg>
+          <div><div style="font-size:14px;font-weight:800;color:#fff;letter-spacing:1px;">LONGHONGMAOYI</div><div style="font-size:10px;color:var(--gold);letter-spacing:2px;">YIWU TRADE LINK</div></div>
+        </div>
+        <p>Your trusted global sourcing partner based in Yiwu, China. Connecting international buyers with China's best factories since 2016.</p>
+        <div class="social-links">
+          <div class="social-btn">💬</div><div class="social-btn">📘</div><div class="social-btn">📸</div><div class="social-btn">▶️</div><div class="social-btn">💼</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li>Product Sourcing</li><li>Factory Verification</li><li>OEM & Private Label</li>
+          <li>Quality Inspection</li><li>Shipping & Logistics</li><li>Market Guide Tours</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li>About Us</li><li>Our Team</li><li>How It Works</li>
+          <li>Testimonials</li><li>Blog & News</li><li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 Yiwu, Zhejiang, China</li>
+          <li>📧 sourcing@longhongmaoyi.com</li>
+          <li>💬 WhatsApp: +86 XXX XXXX XXXX</li>
+          <li>🕐 Mon–Sat: 9am–7pm CST</li>
+        </ul>
+        <div style="margin-top:16px;padding:14px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.2);border-radius:8px;">
+          <p style="font-size:11px;color:var(--gold);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">🌟 Free Consultation</p>
+          <p style="font-size:12px;color:rgba(255,255,255,.6);">Contact us today for a free sourcing consultation</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LONGHONGMAOYI · Yiwu Trade Link · 隆虹贸易 · All Rights Reserved</span>
+      <span>SEO: <a href="#">Yiwu Sourcing Agent</a> · <a href="#">China Wholesale Supplier</a> · <a href="#">Import from China</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<div class="float-wa">
+  <span class="wa-tooltip">Chat on WhatsApp</span>
+  <div class="wa-btn" onclick="window.open('https://wa.me/86XXXXXXXXXX')">💬</div>
+</div>
+
+<!-- INQUIRY POPUP -->
+<div class="popup-overlay" id="popup">
+  <div class="popup-box">
+    <button class="popup-close" onclick="closePopup()">✕</button>
+    <div class="tag tag-gold" style="margin-bottom:14px">🎯 Free Quote</div>
+    <h3>Get Your Free Sourcing Quote</h3>
+    <p>Tell us what you need and our team will send you a detailed quote within 2 hours.</p>
+    <div class="form-group"><label>Your Name</label><input type="text" placeholder="John Smith"/></div>
+    <div class="form-group"><label>WhatsApp / Email</label><input type="text" placeholder="+1 234 567 890"/></div>
+    <div class="form-group"><label>What do you need?</label><textarea style="min-height:80px" placeholder="e.g. 500 units of custom-branded water bottles..."></textarea></div>
+    <button class="btn btn-gold" style="width:100%;justify-content:center;" onclick="submitPopup()">Send My Request →</button>
+  </div>
+</div>
+
+<script>
+// Navbar scroll
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>60);
+});
+
+// Fade in observer
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+},{threshold:.12});
+document.querySelectorAll('.fade-up,.fade-left,.fade-right').forEach(el=>obs.observe(el));
+
+// Counter animation
+const statsObs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const nums = e.target.querySelectorAll('[data-target]');
+      nums.forEach(n=>{
+        const target=+n.dataset.target,dur=2000,step=target/dur*16;
+        let cur=0;
+        const timer=setInterval(()=>{
+          cur=Math.min(cur+step,target);
+          n.textContent=Math.floor(cur).toLocaleString()+(target===98?'':'');
+          if(cur>=target)clearInterval(timer);
+        },16);
+      });
+      statsObs.unobserve(e.target);
+    }
+  });
+},{threshold:.3});
+const statsEl=document.getElementById('stats');
+if(statsEl)statsObs.observe(statsEl);
+
+// FAQ data
+const faqs=[
+  {q:"How do I get started with your sourcing service?",a:"Simply fill in our inquiry form or contact us on WhatsApp. Share what products you're looking for and your target price. We'll respond within 2 hours with supplier options."},
+  {q:"What is your minimum order quantity (MOQ)?",a:"MOQ varies by product and factory, but we can often work with quantities starting from 100–500 units. We'll always try to find the lowest MOQ supplier that fits your needs."},
+  {q:"Can you help with custom branding and private label?",a:"Yes! We work with OEM factories that accept custom logos, packaging, labelling and branding. Ideal for Amazon and Shopify sellers building their own brand."},
+  {q:"How do you ensure product quality?",a:"We conduct pre-production sample checks, in-production inspections, and final pre-shipment QC. We only ship goods that pass our quality standards."},
+  {q:"What shipping options do you offer?",a:"We offer sea freight (LCL & FCL), air freight, and express courier (DHL, FedEx, UPS). We also handle DDP shipments, meaning all duties and taxes are paid before delivery."},
+  {q:"How long does shipping take from China?",a:"Sea freight typically takes 15–35 days depending on your location. Air freight takes 5–10 days. Express courier takes 3–7 days. We provide tracking for all shipments."},
+  {q:"Do you charge sourcing fees?",a:"We charge a transparent service fee based on your order value. There are no hidden costs. We'll explain all fees upfront before you commit to anything."},
+  {q:"Can you help us visit the Yiwu market in person?",a:"Absolutely! We offer guided market tours of Yiwu International Trade City, the world's largest wholesale market, with a dedicated English-speaking guide."},
+];
+const faqGrid=document.getElementById('faqGrid');
+faqs.forEach((f,i)=>{
+  const d=document.createElement('div');
+  d.className='faq-item fade-up';
+  d.innerHTML=`<div class="faq-q" onclick="toggleFaq(${i})">${f.q}<div class="faq-arrow" id="fa${i}">▼</div></div><div class="faq-a" id="fb${i}"><p>${f.a}</p></div>`;
+  faqGrid.appendChild(d);
+});
+function toggleFaq(i){
+  const items=document.querySelectorAll('.faq-item');
+  items.forEach((item,j)=>{
+    if(j===i){item.classList.toggle('open');}
+    else item.classList.remove('open');
+  });
+}
+
+// Popup
+function openPopup(){document.getElementById('popup').classList.add('open');}
+function closePopup(){document.getElementById('popup').classList.remove('open');}
+document.getElementById('popup').addEventListener('click',function(e){if(e.target===this)closePopup();});
+
+function submitForm(){alert('Thank you! We\'ll get back to you within 2 hours. 🎉');}
+function submitPopup(){alert('Request sent! Our sourcing team will contact you shortly. 🚀');closePopup();}
+
+// Show popup after 8 seconds
+setTimeout(()=>{if(!sessionStorage.getItem('popupShown')){openPopup();sessionStorage.setItem('popupShown','1');}},8000);
+
+// Mobile menu toggle
+function toggleMenu(){
+  const links=document.querySelector('.nav-links');
+  const cta=document.querySelector('.nav-cta');
+  const show=links.style.display!=='flex';
+  links.style.cssText=show?'display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:rgba(10,22,40,.98);padding:20px;gap:16px;':'';
+  cta.style.cssText=show?'display:flex;position:fixed;top:72px;right:0;padding:20px;flex-direction:column;background:rgba(10,22,40,.98);':'';
+}
+
+// Staggered fade delays
+document.querySelectorAll('.services-grid .service-card').forEach((c,i)=>c.style.transitionDelay=`${i*0.08}s`);
+document.querySelectorAll('.why-grid .why-card').forEach((c,i)=>c.style.transitionDelay=`${i*0.1}s`);
+document.querySelectorAll('.testi-card').forEach((c,i)=>c.style.transitionDelay=`${i*0.12}s`);
+</script>
+</body>
+</html>
